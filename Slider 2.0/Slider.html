@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+
+    <input type="radio" name="srd" id="slide1" checked>
+    <input type="radio" name="srd" id="slide2" >
+
+    <div class="btn btn1"> <h1>&gt;</h1>   </div>
+    <div class="btn btn2"> <h1>&lt;</h1> </div>
+    
+
+
+<header>
+    <section>
+   <h1>This is Slide 1 </h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iusto aut minima culpa, nam eos soluta beatae provident sit temporibus, aliquid totam, veritatis ipsa obcaecati molestias! Obcaecati natus est dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias, cupiditate vel esse quasi totam corrupti magni id odio beatae ipsa exercitationem facere fugit aliquid officiis eligendi nulla ad natus?</p>
+    </section>
+</header>
+
+<div class="slide2">
+    <section>
+        <h1>This is Slide 2 </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iusto aut minima culpa, nam eos soluta beatae provident sit temporibus, aliquid totam, veritatis ipsa obcaecati molestias! Obcaecati natus est dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias, cupiditate vel esse quasi totam corrupti magni id odio beatae ipsa exercitationem facere fugit aliquid officiis eligendi nulla ad natus?</p>
+         </section>
+</div>
+
+
+<style>
+
+input{
+    z-index: 3;
+    position: absolute;
+    appearance: none;
+    height: 40px;
+    width: 40px;
+}
+
+*::selection{
+    background: #00000000;
+}
+
+#slide1{
+    right: 55px;
+    bottom: 10px;
+}
+
+#slide1:checked ~ .btn2{
+    background: #2e2e2e ;
+}
+
+#slide1:checked ~ .btn2 h1{
+    color: #ffffff;
+}
+#slide2:checked ~ .btn1{
+    background: #2e2e2e ;
+}
+
+#slide2:checked ~ .btn1 h1{
+    color: #ffffff;
+}
+
+#slide2{
+    right: 10px;
+    bottom: 10px;
+}
+
+#slide1:checked ~ header{
+    opacity: 1;
+}
+
+#slide1:checked ~ .slide2{
+    opacity: 0;
+}
+
+#slide2:checked ~ header{
+    opacity: 0;
+}
+
+#slide2:checked ~ .slide2{
+    opacity: 1;
+}
+
+
+.btn{
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn h1{
+    color: #2e2e2e;
+}
+
+.btn2{
+    right: 55px;
+    border-radius: 5px;
+}
+
+
+*{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+section{
+    font-family: monospace;
+    color: #ffffff;
+}
+
+section h1{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+section p{
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+    top:10%;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('./IMAGES/food1.jpg');
+    background-size: cover;
+    top: 0;
+    /* opacity: 0; */
+}
+
+.slide2{
+    width: 100%;
+    height: 100vh;
+    background: url('./IMAGES/food2.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+section{
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(30px);
+    background: #ffffff41;
+}
+
+#slide1:checked ~ header{
+    opacity: 1;
+}
+
+
+
+
+</style>
+
+</body>
+</html>

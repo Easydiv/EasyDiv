@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+.Easydiv{
+    background: #0e0e27;
+    height: 50vh;
+}
+
+.ezdiv-container{
+    height: 50px;
+    width: 100%;
+    background: #ffffffc9;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+
+.ezdiv-container nav{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.ezdiv-container nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.ezdiv-container nav .navitems{
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+    align-items: center;
+}
+
+.ezdiv-container nav .navitems a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+}
+
+.ezdiv-container nav .navitems a:hover{
+    color: #0e1eff;
+}
+
+#btn{
+    position: fixed;
+    height: 0;
+    width: 0;
+}
+
+.ezdiv-container .btn{
+    opacity: 0;
+    z-index: -1;
+}
+
+@media (max-width:550px){
+
+    .ezdiv-container nav{
+        flex-direction: row-reverse;
+    }
+
+    .ezdiv-container nav .navitems{
+        position: fixed;
+        height: 100vh;
+        width: 150px;
+        background: #fff;
+        flex-direction: column;
+        left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        left: -150px;
+        z-index: 99;
+    }
+
+    .ezdiv-container nav .navitems a{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+.ezdiv-container #btn{
+    z-index: 101;
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    top: 5px;
+    opacity: 0;
+}
+
+.ezdiv-container .btn .bars{
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+}
+
+.ezdiv-container .btn .cross{
+    position: relative;
+    font-size: 30px;
+    left: -17px;
+    opacity: 0;
+}
+
+.ezdiv-container #btn:checked ~ .btn .bars{
+    opacity: 0;
+}
+.ezdiv-container #btn:checked ~ .btn .cross{
+    opacity:1;
+}
+
+.ezdiv-container .btn{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ezdiv-container nav .navitems a:nth-child(1){
+    margin-top: 70px;
+}
+
+.ezdiv-container #btn:checked ~ nav .navitems{
+    left: 0;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+}
+
+
+
+@media (min-width:551px) and (max-width:800px){
+    .ezdiv-container nav{
+        width: 90%;
+    }
+}

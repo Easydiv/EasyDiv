@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+}
+
+.ezdiv-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 241, 203);
+}
+
+.ezdiv-container .container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+.ezdiv-container .container .card {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: #363636ab  7px 7px 7px 7px; */
+  background: #fff;
+  border-radius: 50px 0px 50px 0px ;
+  overflow: hidden;
+
+
+}
+
+
+.ezdiv-container .container .card .img{
+  height: 38%;
+  width: 100%;
+  background: url("./images/Img1.jpg");
+  background-size: cover;
+}
+
+.ezdiv-container .container .card .text {
+  height: 50%;
+  width: 100%;
+  background: #fff;
+  padding: 15px 10px;
+  line-height: 20px;
+}
+
+.ezdiv-container .container .card .gradient {
+  height: 12%;
+  width: 100%;
+  display: flex;
+   justify-content: space-around;
+    align-items: center;
+}
+
+.ezdiv-container .container .card .gradient h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ezdiv-container .container .card .gradient1 {
+  background: linear-gradient(#ed5538, #ee8a18);
+}
+
+.ezdiv-container .container .card .gradient2 {
+  background: linear-gradient(#29cf90, #a5ff3e);
+}
+
+.ezdiv-container .container .card .gradient3 {
+  background: linear-gradient(#0151ac, #45bbff);
+}
+
+.ezdiv-container .container .card .text p{
+  font-weight: 300;
+  color: #444;
+}
+
+@media (max-width:991px){
+
+.ezdiv-container{
+  height: 1700px;
+}
+
+.ezdiv-container .container{
+  width: 100%;
+  height: 1650px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ezdiv-container .container .card{
+  margin-top: 50px;
+}
+
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+.ezdiv-conatiner{
+    width: 100vw;
+}
+
+body{
+    background: #ccc ; 
+}
+
+.menu{
+    width: 200px ;
+    height: 250px;
+}
+
+.ezdiv-conatiner .href{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 2px 2px 2px 2px #38383896;
+    border-radius: 0px 0px 25px 0px;
+}
+
+.ezdiv-conatiner  .href:nth-child(1){
+    background: #2d73cf;
+
+}
+.ezdiv-conatiner  .href:nth-child(2){
+    background: #ee408b;
+}
+.ezdiv-conatiner  .href:nth-child(3){
+    background: #72e795;
+}
+.ezdiv-conatiner .href:nth-child(4){
+    background: #ee8a18;
+}
+.ezdiv-conatiner .href:nth-child(5){
+    background: #cc0022;
+}
+
+
+
+
+.ezdiv-conatiner .href a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 25px;
+    color: #fff;
+    opacity:0;
+    display: flex;
+    align-items: center;
+}
+.ezdiv-conatiner .href:hover a{
+    opacity: 1;
+    transition: 0.2s ;
+}
+.ezdiv-conatiner .href:hover{
+    width: 170px;
+    border-radius: 0px 0px 25px 0px ;
+    transition: 0.2s;
+}
+

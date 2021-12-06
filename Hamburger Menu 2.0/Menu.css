@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.ezdiv-container nav{
+    height: 100vh;
+    width: 300px;
+    background: #1d1a1a;
+    position: absolute;
+    z-index: 9;
+    left: -310px;
+}
+
+.ezdiv-container nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.ezdiv-container ul li{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ezdiv-container li:first-child{
+    margin-top: 70px;
+}
+
+.ezdiv-container input:checked ~ nav{
+transition: 0.5s;
+left: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ezdiv-container span:nth-child(1){
+height: 2px;
+width: 26px;
+background: #ffffff;
+}
+
+.ezdiv-container span:nth-child(2){
+height: 2px;
+width: 26px;
+background: #ffffff;
+margin-top: 8px;
+}
+.ezdiv-container span:nth-child(3){
+height: 2px;
+width: 26px;
+background: #ffffff; 
+margin-top: 8px;
+}
+
+.ezdiv-container li:hover{
+background: royalblue;
+
+}
+
+
+
+.ezdiv-container input:checked ~ .btn span:nth-child(2){
+transform: rotate(-45deg);
+transform-origin: 0%, 0% ;
+/* opacity: 0; */
+transition: 0.2s ;
+
+}
+
+.ezdiv-container input:checked ~ .btn span:nth-child(1){
+/* opacity: 0; */
+transform: translateY(8px);
+transform: rotate(45deg);
+position: relative;
+top: 10px;
+transform-origin: 0%, 0% ;
+transition: 0.2s ;
+}
+.ezdiv-container input:checked ~ .btn span:nth-child(3){
+opacity: 0;
+}
+
+
+.ezdiv-container .btn{
+height: 40px;
+ width: 40px;
+ background: #376fff; 
+ margin-top: 10px;
+ margin-left: 10px;
+ /* box-shadow: 4px 4px 4px 4px #0000005b ; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ position: absolute;
+ left: 0%;
+ z-index: 10;
+}
+
+.ezdiv-container input{
+height: 40px;
+width: 40px;
+position: absolute;
+z-index: 11;
+top: 10px;
+margin-left: 10px;
+opacity: 0;
+left: 0;
+}
